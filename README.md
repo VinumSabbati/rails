@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To view this project:
 
-Things you may want to cover:
+- clone this repo
 
-* Ruby version
+- `cd` into it
 
-* System dependencies
+- run `bundle install`
 
-* Configuration
+- run db migratons with `rake db:migrate`
 
-* Database creation
+- enter rails console with `rails console`
 
-* Database initialization
+- input some data in the database following this example:
 
-* How to run the test suite
+```Author.create(first_name: 'Joe', last_name: 'Somebody')```
 
-* Services (job queues, cache servers, search engines, etc.)
+```BlogPost.create(title: 'Title', body: 'Body', author_id: 'your_author_id')```
 
-* Deployment instructions
-
-* ...
+- exit the rails console and start the server `rails server`
