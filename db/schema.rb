@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2018_11_11_185014) do
     t.integer "author_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "slug", null: false
     t.index [nil], name: "index_blog_posts_on_author"
   end
 

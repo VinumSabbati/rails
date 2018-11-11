@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get "/blogposts", to: "blog_posts#index", as: "blog_posts"
+  get "/blogpost/:slug", to: "blog_posts#show", as: "blog_post"
 end

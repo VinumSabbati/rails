@@ -1,0 +1,9 @@
+<div>
+  <% @blog_posts.each do |post| %>
+    <h2><%=post.title %></h2>
+    <h4><%=post.author.full_name %></h4>
+    <p><%=post.body %></p>
+    <span><%=post.format_timestamp %></span>
+    <a href="<%=blog_post_path(post.slug) %>">See full post.</a>
+  <% end %>
+</div>
